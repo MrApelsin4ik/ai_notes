@@ -20,7 +20,7 @@ There are no specific library requirements. Simply install the project dependenc
 
 1. Clone the repository:
    ```bash
-   git clone <[repository-url](https://github.com/MrApelsin4ik/ai_notes)>
+   git clone https://github.com/MrApelsin4ik/ai_notes
    ```
 2. Install dependencies:
    ```bash
@@ -42,7 +42,7 @@ Once logged in or registered, the main page provides access to all the core feat
 - Upload audio files for automatic transcription via Whisper.
 
 ## Demo Video
-Check out the [demo video](<[video-link](https://drive.google.com/file/d/109bNl84fpLGkO24Ag5OJJWHqiuMFU4gL/view?usp=sharing)>) showcasing the prototype of the tool and its features.
+Check out the <[video-link](https://drive.google.com/file/d/109bNl84fpLGkO24Ag5OJJWHqiuMFU4gL/view?usp=sharing)> showcasing the prototype of the tool and its features.
 
 ## License
 This project is currently freely available for use.

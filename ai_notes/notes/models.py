@@ -39,6 +39,21 @@ class NoteFile(models.Model):
     upload = models.FileField(upload_to='uploads/')
 
 
+class GeneratedSummary(models.Model):
+    note = models.ForeignKey(Note, on_delete=models.CASCADE, related_name='generated_summaries')
+    summary_text = models.TextField()  # Текст сгенерированного конспекта
+    thesis_plan = models.TextField()    # Текст тезисного плана
+    test_text = models.TextField()       # Текст теста
+    summary = models.BooleanField(default=False)  # Булевое поле для конспекта
+    outline = models.BooleanField(default=False)  # Булевое поле для тезисного плана
+    test = models.BooleanField(default=False)  # Булевое поле для теста
+
+class GeneratedSummaryFile(models.Model):
+    note = models.ForeignKey(Note, on_delete=models.CASCADE, related_name='summary_files')
+    upload = models.FileField(upload_to='summary_uploads/')
+
+
+
 class CustomUserManager(BaseUserManager):
     def create_user(self, email, password=None, **extra_fields):
         if not email:

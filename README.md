@@ -22,9 +22,13 @@ There are no specific library requirements. Simply install the project dependenc
    ```bash
    git clone https://github.com/MrApelsin4ik/ai_notes
    ```
-2. Install dependencies:
+2. Install dependencies for site server:
    ```bash
    pip install -r requirements.txt
+   ```
+3. Install dependencies for generating server:
+   ```bash
+   pip install -r requirements_gen_serv.txt
    ```
 3. Run migrations:
    ```bash
@@ -39,7 +43,7 @@ There are no specific library requirements. Simply install the project dependenc
    ```bash
    python manage.py runserver 0.0.0.0:80
    ```
-7. Start the generator(It can be ran on another computer. Just change the IP and port to your server):
+7. Start the generator(Change the IP and port to your server):
    ```bash
    python stt3_2.py
    ```

@@ -30,11 +30,19 @@ There are no specific library requirements. Simply install the project dependenc
    ```bash
    python manage.py migrate
    ```
-4. Start the server:
+4. Put your server's ip to settings.py:
+   Change ALLOWED_HOSTS = [] like this:
    ```bash
-   python manage.py runserver
+   ALLOWED_HOSTS = ['192.168.0.117']
    ```
-   
+6. Start the server:
+   ```bash
+   python manage.py runserver 0.0.0.0:80
+   ```
+7. Start the generator(It can be ran on another computer. Just change the IP and port to your server):
+   ```bash
+   python stt3_2.py
+   ```
 ## Usage
 Once logged in or registered, the main page provides access to all the core features:
 - Create new notes, attach files (audio, images, text), and edit the text with rich formatting.
